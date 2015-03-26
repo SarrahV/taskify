@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  background: #678;
+}
+
+header {
+  background: #123;
+  text-align: right;
+
+  .logo {
+    font-family: Playball, sans-serif;
+    color: #f0f6f9;
+    font-size: 38px;
+    float: left;
+    margin: 0 20px;
+  }
+}
+
+nav {
+  .breadcrumbs{
+    margin: 50px 100px 10px;
+    a {
+      color: #abc;
+      margin-right: 5px;
+      text-decoration: none;
+      &:after {
+        content: "❯";
+        margin-left: 5px;
+        color: #89a;
+      }
+      &:last-child{
+        margin-right: 0;
+        &:after {
+          content: "";
+        }
+      }
+      &:hover{
+        color: #bcd;
+      }
+    }
+  }
+}
+
+.twitter-login {
+  background: #234;
+  padding: 10px 25px;
+  color: #d3d6d9;
+  display: inline-block;
+  cursor: pointer;
+  border-left: 1px solid #456;
+  font-size:  14px;
+
+    .profile-image {
+      vertical-align:  middle;
+      height: 30px;
+      border-radius: 15px;
+      margin-right: 10px;
+    }
+
+    .fa {
+      font-size:  2em;
+      color: #456;
+      vertical-align: -5px;
+      margin-left: 10px;
+    }
+}
+
+.list {
+  background: white;
+  margin: 0 100px 50px;
+  border: 3px solid #abc;
+  border-radius: 3px;
+  box-shadow: 0 0 1px black;
+  position: relative;
+    h2{
+      text-align: center;
+    }
+    .item {
+      padding: 10px 20px;
+      border-bottom: 1px solid #f0f9ff;
+      &:last-child{
+        border: none;
+      }
+      .item-title {
+        width: calc(~"100% - 150px");
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .toggle {
+        float: right;
+      }
+    }
+
+    .add-item {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 10px;
+        input{
+          width: 50%;
+          background: #567;
+          border: 1px solid #789;
+          padding: 5px;
+          border-radius: 14px;
+          color: #abc;
+          margin: auto;
+          display: block;
+          &:focus {
+            outline: none;
+            border: 1px solid #abc;
+          }
+        }
+    }
+}
+
+toggle, .progress, .delete-btn {
+  float: right;
+}
+
+.delete-btn {
+  color: #ffa3a3;
+  margin-left: 10px;
+}
+
+.main-loading{
+  color: #abc;
+  font-size: 48px;
+  line-height: 80vh;
+  text-align: center;
+}
+
+.progress {
+  width: 100px;
+  background: #678;
+  height: 10px;
+  border-radius: 20px;
+  padding: 2px;
+  margin-top: 3px;
+   .complete{
+      height: 100%;
+      background: #76cc97;
+      border-radius: 5em;
+   }
+
+}
+
+

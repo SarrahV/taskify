@@ -1,0 +1,24 @@
+{
+  "name": "taskify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-less": "^3.0.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-react": "^3.0.1",
+    "gulp-wrap": "^0.11.0",
+    "main-bower-files": "^2.6.2",
+    "underscore": "^1.8.2"
+  }
+}
