@@ -93,7 +93,7 @@
         <div className="task item" onClick={this.props.onClick}>
           <span className="item-title">{d.name}</span>
           <views.DeleteButton 
-           confirm="Do oyou really want to delete this task?"
+           confirm="Do you really want to delete this task?"
            onDelete={this.destroy}/>
           <views.Progress percent={d.percent_complete}/>
         </div>
